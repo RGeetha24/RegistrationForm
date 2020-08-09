@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<h1>REGISTER</h1>
+		<form id="registration_form" action="insert.php" method="POST">
+			<div>
+				<input type="text" id="form_fname" name="fname" required="">
+				<span class="error_form" id="fname_error_message"></span>
+				<label>
+					First Name
+				</label>	
+			</div>
+			<div>
+				<input type="text" id="form_sname" name="lname" required="">
+				<span class="error_form" id="sname_error_message"></span>
+				<label>
+					Second Name
+				</label>	
+			</div>
+			<div>
+				<input type="email" id="form_email" name="email" required="">
+				<span class="error_form" id="email_error_message"></span>
+				<label>Email id</label>	
+            </div><div>
+				<input type="tel" id="form_phone" name="number" pattern="[0-9]{10}" required="">
+				<span class="error_form" id="phone_error_message"></span>
+				<label>Phone Number</label>	
+			</div>
+            
+			<div>
+				<input type="password" id="form_password" name="password" required="">
+				<span class="error_form" id="password_error_message"></span>
+				<label>Password</label>	
+			</div>
+			<div>
+				<input type="password" id="form_retype_password" name="" required="">
+				<span class="error_form" id="retype_password_error_message"></span>
+				<label>Re-Enter Password</label>	
+			</div>
+			<input type="submit" value="Register" name="">
+		</form>
+	</div>
+</body>
+
+</html>
